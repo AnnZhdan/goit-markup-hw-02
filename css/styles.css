@@ -23,25 +23,6 @@ h5,
 h6 {
   color: var(--primary-dark-color);
 }
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 
 /*Header*/
 .nav-link {
@@ -56,6 +37,7 @@ a {
 }
 .logo {
   font-family: Raleway, sans-serif;
+  text-transform: uppercase;
 }
 .logo-web {
   color: var(--accent-color);
@@ -74,12 +56,7 @@ a {
 .nav-list:focus {
   color: var(--accent-color-dark);
 }
-.nav-list .link-visited:visited {
-  color: var(--primary-dark-color);
-}
-.current:active {
-  color: var(--accent-color-dark);
-}
+
 .adress a {
   color: var(--primary-text-color);
   font-style: normal;
@@ -104,12 +81,59 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.hero-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.section-caption {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.ul-caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.name-caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.name-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.work-examples {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.work-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .hero .text {
   color: var(--primary-white-color);
 }
 .order-button {
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -129,6 +153,10 @@ a {
 }
 .footer .text {
   color: var(--footer-text);
+}
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
 }
 .footer .logo-web {
   color: var(--accent-color);
