@@ -6,39 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-container">
-          <nav class="nav-link">
-            <a href="./index.html" class="logo">
-              <span class="logo-web">Web</span
-              ><span class="logo-studio">Studio</span>
-            </a>
-            <ul class="nav-list">
-              <li><a href="./index.html" class="link-current">Studio</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a href="./">Contacts</a></li>
-            </ul>
-          </nav>
-          <address>
-            <ul class="adress">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-          </address>
-        </div>
+    <header class="border">
+      <div class="container header-container">
+        <nav class="nav-link">
+          <a href="./index.html" class="logo">
+            <span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-size">
+              <a href="./index.html" class="link-current">Studio</a>
+            </li>
+            <li class="nav-size"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="nav-size"><a href="./">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="adress">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
       </div>
     </header>
     <main>
@@ -50,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="achivments-section">
         <div class="container">
           <h2></h2>
           <ul class="achivments">
@@ -85,19 +85,32 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section-about">
         <div class="container">
           <h2 class="section-caption">What are we doing</h2>
           <ul class="about-images">
             <li>
-              <img src="./images/computer.jpg" alt="website" width="360" />
+              <img
+                src="./images/computer.jpg"
+                alt="website"
+                width="360"
+                height="300"
+              />
             </li>
-            <li><img src="./images/tabs.jpg" alt="tabs" width="360" /></li>
+            <li>
+              <img
+                src="./images/tabs.jpg"
+                alt="tabs"
+                width="360"
+                height="300"
+              />
+            </li>
             <li>
               <img
                 src="./images/smartphone.jpg.jpg"
                 alt="design example"
                 width="360"
+                height="300"
               />
             </li>
           </ul>
@@ -107,44 +120,48 @@
         <div class="container">
           <h2 class="section-caption">Our Team</h2>
           <ul class="team-cards">
-            <li>
+            <li class="cards">
               <img
                 src="./images/markguerrero.jpg"
                 alt="mark guerrero photo"
                 width="264"
+                height="260"
               />
               <div class="team-position">
                 <h3 class="name-caption">Mark Guerrero</h3>
                 <p class="name-text">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="cards">
               <img
                 src="./images/tomford.jpg"
                 alt="tom ford photo"
                 width="264"
+                height="260"
               />
               <div class="team-position">
                 <h3 class="name-caption">Tom Ford</h3>
                 <p class="name-text">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="cards">
               <img
                 src="./images/camilagarcia.jpg"
                 alt="camila garcia photo"
                 width="264"
+                height="260"
               />
               <div class="team-position">
                 <h3 class="name-caption">Camila Garcia</h3>
                 <p class="name-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="cards">
               <img
                 src="./images/danielwilson.jpg"
                 alt="daniel wilson photo"
                 width="264"
+                height="260"
               />
               <div class="team-position">
                 <h3 class="name-caption">Daniel Wilson</h3>
