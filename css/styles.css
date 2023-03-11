@@ -23,17 +23,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--primary-dark-color);
+  margin: 0;
 }
-.border {
+
+.border-line {
   border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 auto;
 }
 
 /*Header*/
@@ -65,22 +66,30 @@ a {
 .logo-studio {
   color: var(--primary-dark-color);
 }
+
+.nav-link a {
+  padding: 24px 0;
+}
+
 .nav-list {
-  color: var(--primary-dark-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-}
-.nav-list:hover,
-.nav-list:focus {
-  color: var(--accent-color-dark);
+  text-decoration: none;
+  padding: 24px 0px;
+} 
+
+.nav-list a {
+  color: var(--primary-dark-color);
+  padding: 24px 0px;
 }
 
-.nav-size {
-  padding: 24px 0;
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--accent-color-dark);
 }
 
 .adress {
@@ -93,6 +102,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0px;
 }
 .adress a:hover,
 .adress a:focus {
@@ -107,16 +117,27 @@ a {
 /*hero*/
 .hero {
   background-color: var(--primary-dark-color);
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  padding: 188px 472px;
+  padding: 188px 0;
+}
+
+.hero-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero .text {
   color: var(--primary-white-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  width: 496px;
+  height: 120px;
+  margin: 0;
+  margin-bottom: 48px;
 }
 
 .order-button {
@@ -130,12 +151,8 @@ a {
   align-items: center;
   letter-spacing: 0.04em;
   padding: 16px 32px;
-}
-
-.order-button-flex {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .order-button:hover {
@@ -143,7 +160,10 @@ a {
 }
 
 /*achievments*/
-
+.priorities{
+  visibility: hidden;
+  margin: 0;
+}
 .achivments-section {
   padding: 120px 0px;
 }
@@ -156,18 +176,25 @@ a {
   gap: 24px;
   box-sizing: border-box;
 }
+
+.achivments li {
+  width: 264px;
+  height: 104px;
+}
+
 .hero-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 496px;
-  height: 120px;
+  margin: 0;
 }
 .ul-caption {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 /*What are we doing*/
@@ -195,6 +222,10 @@ a {
 .team-photo {
   background-color: var(--secondary-white-color);
   padding: 120px 0px;
+}
+
+.team-cards img {
+  display: block;
 }
 
 .team-cards {
@@ -247,6 +278,7 @@ a {
   color: var(--accent-color);
   background-color: var(--secondary-white-color);
   border: 1px solid var(--footer-text);
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -255,6 +287,7 @@ a {
   text-align: center;
   letter-spacing: 0.04em;
 }
+
 .work-list .carousel:hover,
 .work-list .carousel:focus {
   color: var(--primary-white-color);
@@ -277,12 +310,19 @@ a {
 
 /*Work examples*/
 
+.team-cards img {
+  display: block;
+}
+
+.card-footer h3 p {
+  border: 1px solid #E7E9FC; 
+  padding: 32px 0 32px 16px;
+}
 .work-examples {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 0px 0px 16px;
   margin: 0 auto;
   margin-bottom: 8px;
 }
@@ -290,7 +330,6 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0px 0px 32px 16px;
   margin: 0 auto;
 }
 
@@ -309,7 +348,6 @@ a {
   height: 420px;
   margin: 0;
   padding: 0;
-  border: 1px solid #e7e9fc;
 }
 
 /*footer*/
@@ -321,8 +359,9 @@ a {
 
 .footer .text {
   color: var(--footer-text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   width: 264px;
-  height: 72px;
   margin: 0;
 }
 
